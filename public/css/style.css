@@ -342,7 +342,8 @@ body {
         display: flex;
         margin-top: 1.3rem !important;
         margin-bottom: 0.3rem !important;
-        margin-left: 5rem !important;
+        margin-left: 9rem !important;
+        width: 16rem !important;
     }
     .filter-toggle-box {
         margin-left: 0 !important;
