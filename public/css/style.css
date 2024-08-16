@@ -1,0 +1,357 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fe424d;
+}
+
+.container {
+    flex: 1;
+    overflow-x: auto;
+}
+
+.navbar {
+    height: 4.5rem;
+}
+.Sign-Log-a {
+    font-weight: 600;
+}
+.Sign-Log-a:hover {
+    color: #fe424d;
+}
+
+.fa-compass  {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link  {
+    color: #222222 !important;
+}
+
+
+/*footer*/
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover {
+    text-decoration-line: underline;
+}
+
+.f-info-links, .f-info-socials {
+    width: 100%;
+}
+.f-info-socials i {
+    font-size: 1.1rem;
+    margin: 0 0.3rem;
+    transition: linear 0.2s;
+}
+.f-info-socials i:hover {
+    font-size: 1.3rem;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #9192901b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*cards*/
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 0.5rem;
+    width: 100%;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0;
+}
+.card-text p {
+    font-weight: 600 !important;
+}
+.listing-link {
+    text-decoration: none !important;
+}
+.card-img-overlay {
+    opacity: 0;
+}
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: rgb(255, 255, 255);
+}
+
+.edit-add-btn {
+    color: white !important;
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+.show-img {
+    height: 30vh;
+}
+
+.btns {
+    display: flex;
+    margin-top: 1.3rem !important;
+    margin-bottom: 0.3rem !important;
+}
+/* navbar.ejs */
+.btn-search {
+    color: white !important;
+    background-color: #fe424d !important;
+    border-radius: 0px 25px 25px 0px !important;
+    height: 2.4rem;
+}
+
+.input-search  {
+    height: 2.5rem;
+    padding: 0 2rem;
+    border-radius: 25px 0px 0px 25px !important;
+}
+
+.btn-search i {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+/* index.ejs */
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.filter {
+    text-align: center;
+    margin-right: 2rem;
+    opacity: 0.7;
+}
+.filter:hover {
+    color: #fe424d;
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: #fe424d underline 1px;
+    text-underline-offset: 1rem;
+}
+.filter p {
+    font-size: 0.7rem;
+}
+.tax-toggle {
+    width: 14rem;
+    font-size: 0.9rem;
+    border: 0.1rem solid #fe424f4a;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+    transition: linear 0.2s;
+    display: flex;
+    margin-right: 1.5rem;
+}
+.tax-toggle:hover {
+    box-shadow: 0.2rem 0.1rem 0.5rem rgba(18, 16, 16, 0.263);
+}
+.filter-box {
+    color: #222222bd;
+    width: 5rem;
+    font-size: 0.9rem;
+    border: 0.1rem solid #fe424f4a;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+    transition: linear 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.filter-box:hover {
+    box-shadow: 0.2rem 0.1rem 0.5rem rgba(18, 16, 16, 0.263);
+}
+.menu-icon {
+    color: #2d2d2d !important;
+    font-size: 1.5rem !important;
+}
+
+.taxInfo {
+    display: none;
+    color: #fe424d;
+}
+.filter-toggle-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: auto !important;
+}
+.filter-toggle-box::-webkit-scrollbar  {
+    width: 0;
+}
+.starability-result {
+    width: 1vh !important;
+}
+.tax-filter-box {
+    display: flex;
+    margin-left: 72%;
+    align-items: center;
+}
+@media (max-width: 750px) {
+    .input-search  {
+        height: 2.5rem;
+        padding: 0 2rem;
+        border-radius: 25px 0px 0px 25px !important;
+    }
+    .btn-search {
+        color: white !important;
+        background-color: #fe424d !important;
+        border-radius: 0px 25px 25px 0px !important;
+        height: 2.4rem;
+    }
+    .nav-background {
+        padding: 0.5rem;
+        margin-top: 1.2rem;
+        padding-top: 1.5rem;
+        background: rgb(247, 238, 238) !important;
+        border-bottom: 1px solid #fe424d;
+    }
+    .navbar-toggler {
+        border: none !important;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+    .brand {
+        margin-left: 9vw;
+    }
+    .navbar-toggler  {
+        margin-right: 9vw;
+    }
+    .col-10 {
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
+    .Sign-Log-a {
+        font-weight: 600;
+        color: rgb(0, 0, 0) !important;
+    }
+    .navbar-nav a {
+        color: rgb(0, 0, 0) !important;
+    }
+    .btn-search {
+        color: white !important;
+        background-color: #fe424d !important;
+        border-radius: 0px 25px 25px 0px !important;
+        height: 2.5rem;
+        margin-bottom: 0.9rem;
+    }
+    
+    .input-search  {
+        height: 2.5rem;
+        padding: 0 2rem;
+        border-radius: 25px 0px 0px 25px !important;
+        margin-bottom: 0.9rem;
+    }
+    .alert {
+        width: 90vw !important;
+        margin: 0 auto !important;
+        font-size: 0.8rem !important;
+        margin-bottom: 1rem !important;
+    }
+    .show-details  {
+        width: 90% !important;
+        margin-left: 1.2rem !important;
+    }
+    .show-image {
+        width: 100% !important;
+    }
+    .review-box  {
+        width: 90% !important;
+        margin-left: 1.2rem !important;
+    }
+
+    .listed-review-box {
+        width: 90% !important;
+        margin-left: 1.2rem !important;
+    }
+    .edit-btn {
+        width: 5.7rem !important;
+    }
+    .review-card {
+        width: 90% !important;
+        font-size: 1rem !important;
+    }
+    .card--details  {
+        font-size: 1rem !important;
+    }
+    .new-listing-page {
+        width: 90% !important;
+        font-size: 1rem !important;
+        margin-left: 1.2rem !important;
+    }
+    .country-div {
+        width: 100% !important;
+    }
+    .edit-listing-div {
+        width: 90% !important;
+        font-size: 1rem !important;
+        margin-left: 1.2rem !important;
+    }
+    .edit-btn-2 {
+        color: white !important;
+        background-color: #fe424d !important;
+        border: none !important;
+        margin-left: 80% !important;
+    }
+    .login-signup-form {
+        width: 90% !important;
+        font-size: 1rem !important;
+        margin-left: 1.2rem !important;
+        margin-bottom: 2rem !important;
+    }
+    .all-btn {
+        margin-top: 1rem !important;
+        margin-left: 70% !important;
+    }
+    .edit-add-btn {
+        color: white !important;
+        background-color: #fe424d !important;
+        border: none !important;
+        margin-left: 80% !important;
+    }
+    .show-image {
+        width: auto !important;
+    }
+    .btns {
+        display: flex;
+        margin-top: 1.3rem !important;
+        margin-bottom: 0.3rem !important;
+        margin-left: 5rem !important;
+    }
+    .filter-toggle-box {
+        margin-left: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: start !important;
+        overflow: auto !important;
+    }
+    .tax-filter-box {
+        margin-left: 1.6rem;
+    }
+}
